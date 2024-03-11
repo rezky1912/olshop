@@ -3,34 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Online Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+    <link href="/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Dashboard Online Shop</h1>
-        <div class="row">
-            <div class="card">
-                <h2>Ringkasan Penjualan</h2>
-                <p>Total Penjualan: <span class="total-penjualan">Rp 0</span></p>
-                <p>Total Pesanan: <span class="total-pesanan">0</span></p>
-            </div>
-            <div class="card">
-                <h2>Produk Terlaris</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Produk</th>
-                            <th>Terjual</th>
-                        </tr>
-                    </thead>
-                    <tbody class="produk-terlaris">
-                        <!-- Data produk terlaris akan diisi melalui JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <header>
+            <h1>Welcome to Your Dashboard</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Customers</a></li>
+            </ul>
+        </nav>
+        <section id="content">
+            <!-- Content will be loaded here dynamically using JavaScript -->
+        </section>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ asset('js/scripts.js') }}"></script>
 </body>
 </html>
